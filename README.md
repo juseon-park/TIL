@@ -1,5 +1,6 @@
 # TIL
-VSCode로 시작
+* [프로세스,스레드](OS/OS)
+* 마크다운 문법
 
 # TODO
 * 스레드가 필요한 이유? https://jhnyang.tistory.com/368
