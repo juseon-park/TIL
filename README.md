@@ -36,8 +36,6 @@ PCB : Process Control Block (PID,메모리정보,프로그램 카운터 등)
 
 # TODO
 * 스레드가 필요한 이유? https://jhnyang.tistory.com/368
-* 프로세스 스레드 디테일
-* 멀티프로세스, 멀티스레드
 * 자바 스레드
   
 # REVIEW
