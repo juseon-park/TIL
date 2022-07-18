@@ -46,6 +46,15 @@
        2. 적절한 시점에 JIT Compiler에 의해 Byte Code 전체를 컴파일하여 실행
        3. 이후는 더이상 인터프리팅 하지 않음.
     4. 가비지 콜렉터
+<details>
+<summary>출처</summary>
+
+https://2ssue.github.io/base/190509_PJI/    
+https://doozi0316.tistory.com/  
+https://coding-nyan.tistory.com/85  
+https://beststar-1.tistory.com/3  
+
+</details>
 
 # TODO
 * 스레드가 필요한 이유? https://jhnyang.tistory.com/368
