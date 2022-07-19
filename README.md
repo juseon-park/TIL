@@ -21,18 +21,25 @@
 
 ## * Garbage Collector
 
-    Runtime Data Area > Heap 메모리 영역에 적재된 객체 중 참조되지 않은 객체들을 제거
+Runtime Data Area > Heap 메모리 영역에 적재된 객체 중 참조되지 않은 객체들을 제거
 
-    Minor GC : Young 영역에서 삭제
+    1. Minor GC : Young 영역에서 삭제
     Eden -> Survivor 0 -> Sruvivor 1 -> Old 반복
+      * Survivor 0 -> Survivor 1 순서가 아님.
+      * 0과 1을 번갈아가면서 적재하며 참조 횟수를 체크
+      * 0과 1중 하나는 비어있는 상태
     Old 영역이 기준치 이상 차게되면 Full GC가 발생
 
     Major GC(Full GC) : Old 영역 에서 삭제
-    - Minor GC 보다 훨씬 많은 시간 
+    - Minor GC 보다 훨씬 많은 시간 (메모리 크기가 큼)
     - 실행 중 GC를 제외한 모든 Thread 일시정지(Stop the world)
+        * Young GC 중에도 멈추긴 하지만 무시할 만한 수준
     - 객체를 삭제하면 Heap 영역에 빈 메모리 공간이 생겨 이를 없애기 위해 메모리 전체를 재구성함.
+        * GC에 포함, GC가 끝나고 재구성 하는것이 아님
+        * Young GC도 GC중 재구성함
   
     #GC 알고리즘
+    G1 GC
   
     OOM(Out Of Memory)
     할당된 메모리의 공간을 모두 사용하여, 새로 메모리 공간을 할당할 여유가 없다는 뜻.
@@ -46,6 +53,11 @@
        2. 적절한 시점에 JIT Compiler에 의해 Byte Code 전체를 컴파일하여 실행
        3. 이후는 더이상 인터프리팅 하지 않음.
     4. 가비지 콜렉터
+
+# Concurrent Hash Map (JAVA의 동시성 처리 라이브러리)
+
+# 인터페이스와 추상클레스 - 객체지향
+
 <details>
 <summary>출처</summary>
 
@@ -53,6 +65,7 @@ https://2ssue.github.io/base/190509_PJI/
 https://doozi0316.tistory.com/  
 https://coding-nyan.tistory.com/85  
 https://beststar-1.tistory.com/3  
+민국님
 
 </details>
 
