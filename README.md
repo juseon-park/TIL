@@ -15,28 +15,17 @@
         공통적이지만 객체에 따라 다른 기능 추상 메서드로 정의( 먹기 - 육식, 초식)
 
     인터페이스
-        기능을 장착 , 추상메서드만 정의 가능
+        기능을 장착 , 추상메서드만 정의 가능, 다중 구현 가능
         각각 다른 추상클래스(파리,비둘기)를 상속받는데 공통된 기능이 필요할때(날기)
-        
+
     OVERRIDE,OVERLOAD
              
 
-
-
-
-
-
-
 <details>
 <summary>출처</summary>
-
-https://2ssue.github.io/base/190509_PJI/    
-https://doozi0316.tistory.com/  
-https://coding-nyan.tistory.com/85  
-https://beststar-1.tistory.com/3  
-민국님
-
+https://myjamong.tistory.com/150
 </details>
+
 
 # TODO
 * 스레드가 필요한 이유? https://jhnyang.tistory.com/368
@@ -98,3 +87,15 @@ Runtime Data Area > Heap 메모리 영역에 적재된 객체 중 참조되지 �
        2. 적절한 시점에 JIT Compiler에 의해 Byte Code 전체를 컴파일하여 실행
        3. 이후는 더이상 인터프리팅 하지 않음.
     4. 가비지 콜렉터
+
+
+<details>
+<summary>출처</summary>
+
+https://2ssue.github.io/base/190509_PJI/    
+https://doozi0316.tistory.com/  
+https://coding-nyan.tistory.com/85  
+https://beststar-1.tistory.com/3  
+민국님
+
+</details>
